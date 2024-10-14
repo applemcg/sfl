@@ -1,0 +1,82 @@
+
+ * active_versions
+   * debug
+   * indir
+   * latest_version
+     * my_versions
+       * debug
+       * indir
+       * myname
+   * ssf
+
+ * all_ver
+   * backup_dirs
+   * foreach
+   * one_ver
+     * backup_ver
+       * backup_directories
+       * backup_files
+       * debug
+       * needir
+       * next_version
+         * mmp_version
+           * my_versions
+       * pause
+       * report_notdirectory
+     * cdx
+     * next_version
+     * pause
+     * pickd
+
+ * deliver_whlib
+   * debug
+   * field
+   * gather_whlib
+   * if_missingargs
+   * pause
+   * report_notfile
+   * shd_setdate
+
+ * mk_graf_version
+   * declare
+
+ * prep_version
+   * args_uniq
+   * debug
+   * difftwo
+   * indir
+   * latest_version
+   * needir
+   * pause
+
+ * recover_profile
+   * backup
+   * debug_off
+   * debug_on
+   * libfun
+   * pause
+   * pause_off
+   * pause_on
+   * qprofile
+
+ * syncthing_server
+   * marty3
+   * syncthing
+
+ * usover_fields
+   * report_notpipe
+
+ * usover_numberfields
+   * report_notpipe
+
+ * version_files
+   * backup_dirs
+
+ * version_fundiff
+   * debug
+   * difftwo
+   * functions
+   * pause
+
+ * where_versions
+   * foreach
