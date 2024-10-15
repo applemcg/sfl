@@ -30,7 +30,7 @@ the papers you see in the governing document.  The concept is
 
 ### Security
 
-## [0.0.1] - 2024-10-??
+## [0.0.1] - 2024-10-13
 
 ### Added
 
