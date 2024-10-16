@@ -14,7 +14,7 @@ For the time-being, here's the [governing document](./README.html)
 
 ## [Unreleased]
 
-The first release will be a point release of lesson 102.  I'm gathering
+The next release will be a point release of lesson 102.  I'm gathering
 the papers you see in the governing document.  The concept is
 *sections of a chapter*.
   
@@ -30,8 +30,19 @@ the papers you see in the governing document.  The concept is
 
 ### Security
 
-## [0.0.1] - 2024-10-13
+## [0.1.0] - 2024-10-16
 
 ### Added
 
++ bin  repo, update, version functions, likely promoting to bashlib
++ this Changelog, index
++ generic .to{keep,clean} functions
++ lesson 101 
+    + sfl101.lib
+    + {abstracts,path_fragment}.txt
+    + index.md
+
+### Deleted
+
++ version.out - awaits the graf, function hierarchy diagram
 
