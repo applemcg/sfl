@@ -1,7 +1,0 @@
-sfl () 
-{ 
-    : smart directory;
-    : mfg: smart_dir;
-    : date: 2024-10-14;
-    ${@:-echo} "/Users/martymcgowan/marty3/src/sfl"
-}
