@@ -52,11 +52,11 @@ Simply conduct these steps:
 	$ fbdy sfl_init              # shows the sfl_init function, which
 		                         # overwrites a local ./ copy of sfl101.li
 
-# Mzintenance, Direction
+# Maintenance, Direction
 
-The latter step suggests to add a function to the library, the local
-copy anyway, you need to add the function to the `sfl_list`, shown
-here:
+The latter step suggests that to add a function to the library, the
+local copy anyway, you need to add the function to the `sfl_list`,
+shown here:
 
 ```
     sfl_list () 
