@@ -7,26 +7,36 @@ a handful of specific functions with a few thrown in as place-holders
 for follow-up lessons.
 
 
-# Get Acquainted
+# Work Exercises to Get Acquainted
+
+The command-line examples assume the user is in the 101 directory; the
+accompanying links take advantage of this document.
 
 Before sourcing the shell library, inspect the abstracts.txt file.
 
+        $ cat abstracts.txt  # or
+
+   <a href="./abstracts.txt" download="abstracts.txt">Download abstracts.txt</a>
+
 It's possible to view function two ways:
 
-1. view the library in a view-only editor #  $ view $(which sfl101.lib) 
-1. source the library in a sub-shell and display the function body
+1. view the library in a view-only editor 
+
+        $ view $(which sfl101.lib) 
+		
+   <a href="./sfl101.lib" download="sfl101.lib">Download sfl101.lib</a>
+   
+1. source the library in a sub-shell and display a function body
 
 Since the latter means may be new to you, here's how:
 
         $ ( source $(which sfl101.lib); 
             declare -f sfl_help )    # the parens define the sub-shell
 
-Now, do this one:
+Alternatively,
 
         $ ( source $(which sfl101.lib); 
-		    declare -f fbdy )  ;     # you see the function,
-
-        $ declare -f fbdy            # but not here.
+		    declare -f fbdy )  ;     # you see the function
 
 By inspecting the library completely, satisfy yourself you are
 comfortable in allowing it's contents into your shell environment.
@@ -42,7 +52,7 @@ Simply conduct these steps:
 	$ fbdy sfl_init              # shows the sfl_init function, which
 		                         # overwrites a local ./ copy of sfl101.li
 
-# Direction
+# Mzintenance, Direction
 
 The latter step suggests to add a function to the library, the local
 copy anyway, you need to add the function to the `sfl_list`, shown
@@ -78,7 +88,7 @@ expanded upon in future editions of Shell Library lessons.
 1. [curly brace { ,,, } expansion](https://www.gnu.org/software/bash/manual/bash.html#B
 race-Expansion)  where the example, under **Brace Expansion**
 
-        bash$ echo a{d,c,b}e
+        $ echo a{d,c,b}e
         ade ace abe
         
 1. Using an underscore, e.g. `sfl_init` in function names introduces
@@ -100,7 +110,7 @@ be covered in a later lesson.
 
 ## Contact the Author
         
-+ name:  [Marty McGowan](mailto:martymcgowan@alum.mit.edu)
++ name:  [Marty McGowan](mailto:martymcgowan@alum.mit.edu?subject=Subject%20Function%20Libraries)
 + about: http://mcgowans.org/marty3
 + page:  http://mcgowans.org/marty3/sfl
 + text: <a href="./index.md" download="index.md">document source</a>

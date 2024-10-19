@@ -37,7 +37,7 @@ pause ()
     : dummy to fill occasional calls
     return
 }
-slf_help () 
+sfl_help () 
 { 
     : for the library;
     cat <<EOF
@@ -46,9 +46,9 @@ slf_help ()
     1. fbdy  
     2. functions
     3. sfg1
-    4. slf_init
-    5. slf_list
-    6. slf_help
+    4. sfl_init
+    5. sfl_list
+    6. sfl_help
     7. comment -- from common library
     8. debug, pause. "
 
@@ -59,17 +59,17 @@ slf_help ()
 EOF
 
 }
-slf_init () 
+sfl_init () 
 { 
-    : source slf101_lib, then run slf_init;
+    : source slf101_lib, then run sfl_init;
     local lib=./slf101_lib;
-    slf_list fbdy | tee $lib;
+    sfl_list fbdy | tee $lib;
     comment $(ls -l $lib)
     comment if you can, back-up $lib
 }
-slf_list () 
+sfl_list () 
 { 
     : Shell Library 101, library function list;
     ${*:-echo} sfg1 functions fbdy comment debug pause \
-               slf_{help,init,list}
+               sfl_{help,init,list}
 }
