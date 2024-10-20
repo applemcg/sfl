@@ -2,15 +2,18 @@
 
 .*
 *.err
-*.htm
 *.html
 *.lst
 *.nxt
 *.out
-*.rdb
 *.tmp
 *.tsv
 *~
 
 # directories
+
+.ver/
+.bak/
+.tmp/
+/bin
 
