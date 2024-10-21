@@ -2,6 +2,8 @@
 
 # Shell Function Library 101
 
+[Table of Contents](../index.html)
+
 This is the introductory lesson to Shell Libraries.  It is made up of
 a handful of specific functions with a few thrown in as place-holders
 for follow-up lessons.

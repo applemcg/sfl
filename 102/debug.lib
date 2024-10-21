@@ -1,6 +1,6 @@
 debug () 
-{
-    : it’s a dummy
+{ 
+    : it’s a dummy;
     return
 }
 debug_init () 
@@ -10,14 +10,14 @@ debug_init ()
     : date: 2023-03-05;
     : date: 2024-05-28;
     debug_off;
-    pause_off;
+    pause_off
 }
 debug_list () 
 { 
     : Crunched debug_list;
     ${@:-echo} debug \
-               debug_{init,list,off,on} \
-               function_{names,truth} isfunction pause \
+               debug_{init,list,off,on} foreach \
+               function_{names,truth} isfunction myname pause \
                pause_{off,on} ssf
 }
 debug_off () 
@@ -25,8 +25,8 @@ debug_off ()
     : no diagnostics, just return;
     : date: 2023-03-29;
     function debug () 
-    {
-        : it’s a dummy    
+    { 
+        : it’s a dummy;
         return
     }
 }
@@ -38,6 +38,24 @@ debug_on ()
     : date: 2022-03-07;
     : date: 2023-01-30;
     eval "debug () { printf \"%-21s\\t%-21s\\t%-21s : %s\\n\" \${FUNCNAME[3]} \${FUNCNAME[2]} \${FUNCNAME[1]} \"\$*\" 1>&2; }"
+}
+foreach () 
+{ 
+    : TCL legacy, FOREACH function Arg ...;
+    : date: 2023-07-22;
+    : date: 2024-04-29;
+    debug ENTRY $# $1;
+    [[ $# -lt 2 ]] && return;
+    local cmd="$1";
+    local arg;
+    shift;
+    debug SET $# $@;
+    pause;
+    for arg in $@;
+    do
+        : debug RUN $cmd "$arg";
+        $cmd "$arg";
+    done
 }
 function_names () 
 { 
@@ -61,9 +79,16 @@ isfunction ()
     : date: 2023-08-21;
     type -a $1 2> /dev/null | grep 'is a function' > /dev/null
 }
+myname () 
+{ 
+    : a calling functions NAME, default MYcaller;
+    : 2 is the callers caller, 3 is theirs, etc...;
+    : date: 2023-07-22;
+    echo ${FUNCNAME[${1:-1}]}
+}
 pause () 
-{
-    : it’s a dummy
+{ 
+    : it’s a dummy;
     return
 }
 pause_off () 
@@ -71,8 +96,8 @@ pause_off ()
     : do not pause, just return;
     : date: 2023-03-29;
     function pause () 
-    {
-        : it’s a dummy    
+    { 
+        : it’s a dummy;
         return
     }
 }
