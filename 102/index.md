@@ -2,7 +2,7 @@
 
 # Shell Function Library 102
 
-[Table of Contents](../index.html)
+[Table of Contents](../index.md)
 
 This lessons adds debugging support functions to the SFL collection.
 Features have **on** and **off** function handles which work from the 
@@ -41,6 +41,9 @@ of of the bash shell.
 ### The local function
 
 ### The shell array 
+
+https://www.gnu.org/software/bash/manual/html_node/Arrays.html
+
 
 ### Conditional expressions
 
