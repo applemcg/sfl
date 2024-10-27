@@ -65,22 +65,20 @@ race-Expansion)  where the example, under **Brace Expansion**
         $ echo a{d,c,b}e
         ade ace abe
 
-
-
-
 1. A function may have searchable ``tag``s,  which is also built from a null command.
    A tag looks like
    
-   //: tagname: optional data ... ;//
-   
+       : *tagname: optional data ...*
+
+      
    with examples:
 
 
-+ date: //2024-11-12 ... ;
-+ related: //func_a, cmd_c, ... // lesson, 
-+ usage:  //~ argname, ... //
-+ todo:  //a planned enhancement ... //
-  + bug:  //todo today? //
++ date: *2024-11-12 ... ;*
++ related: *func_a, cmd_c, ...* lesson, 
++ usage:   *~ argname, ...*
++ todo:  *a planned enhancement ...*
++ bug:  *todo today?*
 
 with these functions to retrieve the first null command lines
 
