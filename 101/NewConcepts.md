@@ -12,7 +12,10 @@ expanded upon in future editions of Shell Library lessons.
        : (a colon)
 	   
 	   
-   1. A ``smart_list`` is built using the **default argument** using an [${*:-echo} idiom](https://www.gnu.org/software/bash/manual/bash.html#Shell-Parameter-Expansion)   where the example is:
+   1. A ``smart_list`` is built using the **default argument** using
+      an [${*:-echo}
+      idiom](https://www.gnu.org/software/bash/manual/bash.html#Shell-Parameter-Expansion)
+      where the example is:
 
         : ${parameter:-word}
         

@@ -23,19 +23,52 @@ fbdy ()
     declare -f ${@:-fbdy}
 }
 comment () 
-{
-    : arguments to Stderr
+{ 
+    : arguments to Stderr;
     echo $@ 1>&2
 }
 debug () 
-{
-    : dummy to fill occasional calls
+{ 
+    : dummy to fill occasional calls;
     return
 }
+debug_on () 
+{ 
+    : write a COMMENT, on STDERR, at a point in a function, listing ...;
+    : the CALLER and any passed ARGS, who CALLED it, 3rd, and that CALLER, 4th as well;
+    : lesson: NO user functions in DEBUG:;
+    : date: 2022-03-07;
+    : date: 2023-01-30;
+    eval "debug () { printf \"%-21s\\t%-21s\\t%-21s : %s\\n\" \${FUNCNAME[3]} \${FUNCNAME[2]} \${FUNCNAME[1]} \"\$*\" 1>&2; }"
+}
+debug_off () 
+{ 
+    : no diagnostics, just return;
+    : date: 2023-03-29;
+    function debug () 
+    { 
+        return
+    }
+}
 pause () 
-{
-    : dummy to fill occasional calls
+{ 
+    : dummy to fill occasional calls;
     return
+}
+pause_on () 
+{ 
+    : pause the script, waiting for the users CR;
+    : date: 2023-01-30;
+    eval "pause () { read -p \"[return] / [Ctrl-C] \${FUNCNAME[1]} \$@ ? \" < /dev/tty; }"
+}
+pause_off () 
+{ 
+    : do not pause, just return;
+    : date: 2023-03-29;
+    function pause () 
+    { 
+        return
+    }
 }
 sfl_help () 
 { 
@@ -64,12 +97,12 @@ sfl_init ()
     : source slf101_lib, then run sfl_init;
     local lib=./slf101_lib;
     sfl_list fbdy | tee $lib;
-    comment $(ls -l $lib)
+    comment $(ls -l $lib);
     comment if you can, back-up $lib
 }
 sfl_list () 
 { 
     : Shell Library 101, library function list;
-    ${*:-echo} sfg1 functions fbdy comment debug pause \
+    ${*:-echo} sfg1 functions fbdy comment {debug,pause}{,_{on,off}} \
                sfl_{help,init,list}
 }
