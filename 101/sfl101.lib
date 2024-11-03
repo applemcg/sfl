@@ -75,7 +75,7 @@ sfl_help ()
     : for the library;
     cat <<EOF
  study  sequence: 
-    0. abstracts.txt -- function abstrats,
+    0. abstracts.txt -- function abstracts,
     1. fbdy  
     2. functions
     3. sfg1
@@ -87,15 +87,15 @@ sfl_help ()
 
   enjoy,
     ~ Marty
-      martymcg@fastmail.com
+      MartyMcG@Fastmail.com
 
 EOF
 
 }
 sfl_init () 
 { 
-    : source slf101_lib, then run sfl_init;
-    local lib=./slf101_lib;
+    : source slf101.lib, then run sfl_init;
+    local lib=./slf101.lib;
     sfl_list fbdy | tee $lib;
     comment $(ls -l $lib);
     comment if you can, back-up $lib
