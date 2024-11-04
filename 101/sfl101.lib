@@ -103,6 +103,6 @@ sfl_init ()
 sfl_list () 
 { 
     : Shell Library 101, library function list;
-    ${*:-echo} sfg1 functions fbdy comment {debug,pause}{,_{on,off}} \
+    ${*:-echo} sfg1 debug pause functions fbdy comment \
                sfl_{help,init,list}
 }

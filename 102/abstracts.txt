@@ -1,0 +1,17 @@
+name          	abstract                                                         
+----          	--------                                                         
+debug         	it’s a dummy                                                     
+debug_init    	default debugging and pausing are OFF                            
+debug_list    	Crunched debug_list                                              
+debug_save    	save, collect the Debug List into the library                    
+debug_off     	no diagnostics, just return                                      
+debug_on      	write a COMMENT, on STDERR, at a point in a function, listing ...
+foreach       	TCL legacy, FOREACH function Arg ...                             
+function_names	File Functions, File name = function name                        
+function_truth	return Function IS OR NOT                                        
+isfunction    	prefer TYPE to Declare -f                                        
+myname        	a calling functions NAME, default MYcaller                       
+pause         	it’s a dummy                                                     
+pause_off     	do not pause, just return                                        
+pause_on      	pause the script, waiting for the users CR                       
+ssf           	tab separated Arguments, String String Format                    

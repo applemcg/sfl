@@ -1,15 +1,11 @@
-name     	abstract                                                         
-----     	--------                                                         
-comment  	arguments to Stderr                                              
-debug    	dummy to fill occasional calls                                   
-debug_off	no diagnostics, just return                                      
-debug_on 	write a COMMENT, on STDERR, at a point in a function, listing ...
-fbdy     	function bodies                                                  
-functions	identify unique function on named files OR stdin                 
-pause    	dummy to fill occasional calls                                   
-pause_off	do not pause, just return                                        
-pause_on 	pause the script, waiting for the users CR                       
-sfg1     	GREP from the Functions in the ENVIRONMENT                       
-sfl_help 	for the library                                                  
-sfl_init 	source slf101_lib, then run sfl_init                             
-sfl_list 	Shell Library 101, library function list                         
+name     	abstract                                        
+----     	--------                                        
+sfg1     	GREP from the Functions in the ENVIRONMENT      
+debug    	dummy to fill occasional calls                  
+pause    	dummy to fill occasional calls                  
+functions	identify unique function on named files OR stdin
+fbdy     	function bodies                                 
+comment  	arguments to Stderr                             
+sfl_help 	for the library                                 
+sfl_init 	source slf101.lib, then run sfl_init            
+sfl_list 	Shell Library 101, library function list        

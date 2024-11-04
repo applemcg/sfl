@@ -16,9 +16,17 @@ debug_list ()
 { 
     : Crunched debug_list;
     ${@:-echo} debug \
-               debug_{init,list,off,on} foreach \
+               debug_{init,list,save,off,on} foreach \
                function_{names,truth} isfunction myname pause \
                pause_{off,on} ssf
+}
+debug_save () 
+{ 
+    : save, collect the Debug List into the library;
+    local lib=./debug.lib;
+    debug_list fbdy | tee $lib;
+    functions $lib 1>&2;
+    comment if you can, back-up $lib
 }
 debug_off () 
 { 
