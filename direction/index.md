@@ -1,13 +1,14 @@
 
 
-# Development Directio
+# Development Direction
 
-To givme myself some guidance, let's lay out a direction
-
+To give guidance, let's lay out a direction
 
 ## Library conventions
 
-+ cleanlib holds debug, myname, self-ref less smar names, 
-+ functionlib holds smart directories, filenames, noto superceded by app-like families
+* finish 101
++ cleanlib holds debug, myname, self-ref less smart names, 
++ functionlib holds smart directories, filenames, not superseded by
+  app-like families
 + programlib absorbs utillib, well-used general functions
 + maintlib - the development process wrapup, etc. 
