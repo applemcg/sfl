@@ -1,7 +1,8 @@
 
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to Shell Function LIbraries (sfl) are
+documented in this file.
 
 The format is based on [Keep a
 CHANGELOG](https://keepachangelog.com/), and this project
@@ -10,13 +11,12 @@ adheres to [Semantic Versioning](https://semver.org/).
 Please read those documents; the links now take you to the most recent
 version.  And, do occasionally return to refresh your understanding.
 
-For the time-being, here's the [governing document](./README.html)
+For the time-being, here's the [Main Document](./index.md)
 
 ## [Unreleased]
 
-The next release will be a point release of lesson 102.  I'm gathering
-the papers you see in the governing document.  The concept is
-*sections of a chapter*.
+The next release wraps up lesson 101.  The concept is *sections of a
+chapter*.
   
 ### Added
 
